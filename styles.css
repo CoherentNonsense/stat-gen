@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: rgb(49, 202, 100);
+    width: 80%;
+    margin: 4em auto;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#statsInput {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#statsInput > ul > li {
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(49, 202, 100);
+    list-style: none;
+    background-image: linear-gradient(-90deg, rgb(21, 37, 37), rgb(31, 54, 54));
+    height: 50px;
+    min-width: 500px;
+    padding: 0.5em;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+.deleteSkillBtn {
+    float: right;
+    color: rgb(202, 49, 49);
+    background: none;
+    width: 50px;
+    height: 100%;
+    border: none;
+    border: 2px solid rgb(202, 49, 49);
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+#newSkill {
+    display: inline-block;
+    height: 40px;
+    background-color: rgb(31, 54, 54);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+#newSkillText {
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    width: 0;
+    background: none;
+    border: none;
+    transition: 0.2s;
+}
+
+#newSkillBtn {
+    font-size: 30px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#newSkill:hover > #newSkillText {
+    width: 250px;
+}
+
+#newSkillText:focus {
+    width: 250px;
+}
+
+#newSkill:hover > #newSkillBtn {
+    background: #fff;
+    color: #222;
+}
+
+#statsOutput {
+    position: relative;
+    background-color: #333;
+    min-width: 500px;
+    height: 500px;
+    box-shadow: rgba(30, 58, 56, 0.507) 5px 5px 9px 3px;
+}
+
+#generateGraphBtn {
+    color: #fff;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: none;
+    padding: 5px;
+    margin: -40px auto 0 auto;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#bars {
+    width: 100%;
+    height: 100%;
+}
+
+.bar {
+    opacity: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+    overflow-wrap: break-word;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    background-color: pink;
+    bottom: 45px;
+    left: 10px;
+    width: 80px;
+    padding: 5px;
+    height: 0;
+
+}

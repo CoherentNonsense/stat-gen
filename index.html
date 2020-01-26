@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Generator</title>
+    <meta name="description" content="A sample character generator">
+    <meta name="author" content="Casey Tai">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+        Change Log:
+            October 15: document created
+            October 16: base html and css finished
+            October 17: made newSkill(), removeSkill(), and output functions
+            October 18: finished newSkill() and added input
+            October 21: made drawGraph() and randomized stats
+
+        
+        Evaluation:
+            [INIT] all
+            [DONE]create an empty object
+            [DONE]use the value of an object's property to make a custom animation (width)
+            [DONE]pass an object to a function as a parameter/argument
+            [DONE]use the value of an object's property to make a custom animation duration
+
+            [PROCESS] all
+            [DONE]create a function that accepts an object as an argument/parameter
+            [DONE]set a delay using setTimeout() or setInterval
+            [DONE]use an anonymous function inside setTimeout() or setInterval
+            [DONE]use string addition fstring
+            [DONE]processes at least 5 characteristics
+
+            [OUTPUT] 5
+            change the src of an element
+            [DONE]display information using .innerHTML
+            [DONE]animate using a custom duration
+            [DONE]position an object using % instead of px
+            [DONE]animate a change in the width of an element
+            [DONE]animate a fade in or fade out of an element
+
+            [STYLE] all
+            [DONE]honour all previous //STYLE sections
+            [DONE]use descriptive variable names
+            [DONE]break up functions into separate ones for input, processing, and output
+            [DONE]uses descriptive comments to identify and describe each function,
+            for example: //PROCESS: this function accepts distanceUp and animates the image up that number of pixels
+            [DONE]add spaces between mathematical operators,
+            for example: var exampleVar = 3 + 4, not var exampleVar=3+4.
+    -->
+</head>
+<body>
+    <div id="container">
+        <div id="statsOutput">
+            <div id="bars">
+                
+            </div>
+            <button type="button" id="generateGraphBtn">Randomize Stats</button>
+        </div>
+        <div id="statsInput">
+            <ul id="statList"></ul>
+
+            <div id="newSkill">
+                <input type="text" id="newSkillText" placeholder="Add new skill...">
+                <button type="button" id="newSkillBtn">+</button>    
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
